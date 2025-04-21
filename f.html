@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timeless Pages</title>
+  <style>
+    body, h1, h2, h3, p, ul {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #222;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: url('image.png') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text {
+      position: relative;
+      color: white;
+    }
+
+    .hero-text h2 {
+      font-size: 50px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .wave span {
+      display: inline-block;
+      animation: wave 1.5s infinite;
+      animation-delay: calc(var(--i) * 0.1s);
+    }
+
+    @keyframes wave {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-top: 10px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Timeless Pages</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/questions.html">Questions-FAQ</a></li>
+        <li><a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/contact us.html">Contact Us</a></li>
+        <li><a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/l.html">Log In</a></li>
+        <li><a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/signin.html">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h2 class="wave">
+        <span style="--i:1; color: white;">T</span>
+        <span style="--i:2; color: white;">I</span>
+        <span style="--i:3; color: white;">M</span>
+        <span style="--i:4; color: white;">E</span>
+        <span style="--i:5; color: white;">L</span>
+        <span style="--i:6; color: white;">E</span>
+        <span style="--i:7; color: white;">S</span>
+        <span style="--i:8; color: white;">S</span>
+        &nbsp;
+        <span style="--i:9; color: #f39c12;">P</span>
+        <span style="--i:10; color: #f39c12;">A</span>
+        <span style="--i:11; color: #f39c12;">G</span>
+        <span style="--i:12; color: #f39c12;">E</span>
+        <span style="--i:13; color: #f39c12;">S</span>
+      </h2>
+      <p>“A book is the best gift you can give.”</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <h3>Explore a world of knowledge</h3>
+    <p>Find your favorite books across various genres and enjoy a seamless shopping experience.</p>
+  </section>
+
+  <div class="content">
+    <h1>Visit website and read Books as your wish! - Timeless Pages</h1>
+    <h3>Welcome to ReadEase – Your Free Digital Library</h3>
+    <h4>At ReadEase, we believe in making knowledge accessible to everyone. Our platform offers a vast collection of books, articles, and literary works that you can read online for free—without the need to purchase anything. Whether you're a book lover, a student, or just someone who enjoys exploring different genres, ReadEase provides a seamless reading experience. From timeless classics to modern literature, dive into a world of stories, research, and knowledge—all at your fingertips.</h4>
+    <h3>📖 No Purchases, Just Pure Reading</h3>
+    <h3>🔍 Explore a Wide Range of Genres</h3>
+    <h3>📚 Enjoy Anytime, Anywhere</h3>
+  </div>
+</body>
+</html>
