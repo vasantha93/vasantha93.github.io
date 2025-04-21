@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Economic Books</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #E873FF;
+      background-image: url('https://t3.ftcdn.net/jpg/04/95/12/38/360_F_495123890_u9dfRTJx2MrYXWs8Rd1eUibMAeVyXXP9.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Ensures 4 books in a row */
+      gap: 20px;
+      justify-content: center;
+    }
+    .book-card {
+      border: 6px solid gold;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .book-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .book-author {
+      font-size: 14px;
+      color: gray;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .cart-btn, .purchase-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .purchase-btn {
+      background-color: #28a745;
+    }
+    .cart-btn:hover {
+      background-color: #0056b3;
+    }
+    .purchase-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center; color:#FF007F"><b><i>Economic Books</i></b></h1>
+    <div class="book-grid">
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/71Mw7MfypqL._AC_UF1000,1000_QL80_.jpg" alt="Book" />
+        <div class="book-title">The Avengers</div>
+        <div class="book-author">Joshua Fine</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_Wealth_of_Nations"><button class="cart-btn">📖 Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Why_Nations_Fail_Cover.jpg" alt="Book" />
+        <div class="book-title">Why Nations Fail</div>
+        <div class="book-author">Daron Acemoglu</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Why_Nations_Fail"><button class="cart-btn">📖 Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/71PRWfiwjDL.jpg" alt="Book" />
+        <div class="book-title">General Theory</div>
+        <div class="book-author">John Maynard Keynes</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_General_Theory_of_Employment,_Interest_and_Money"><button class="cart-btn">📖 Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/5d/Economics_%28textbook%29.png" alt="Book" />
+        <div class="book-title">Economics</div>
+        <div class="book-author">Paul Samuelson</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Paul_Samuelson"><button class="cart-btn">📖 Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/63/Freakonomics.jpg" alt="Book" />
+        <div class="book-title">Freakonomics</div>
+        <div class="book-author">Steven Levitt</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Freakonomics"><button class="cart-btn">📖 Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Capital_in_the_Twenty-First_Century_%28front_cover%29.jpg/330px-Capital_in_the_Twenty-First_Century_%28front_cover%29.jpg" alt="Book" />
+        <div class="book-title">Capital in the 21st Century</div>
+        <div class="book-author">Thomas Piketty</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Capital_in_the_Twenty-First_Century"><button class="cart-btn">📖 Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Basic_Economics_by_Thomas_Sowell_%28Fifth_Edition%29.jpg/220px-Basic_Economics_by_Thomas_Sowell_%28Fifth_Edition%29.jpg" alt="Book" />
+        <div class="book-title">Basic Economics</div>
+        <div class="book-author">Thomas Sowell</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Basic_Economics"><button class="cart-btn">📖 Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

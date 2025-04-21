@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookNook Login</title>
+<style>
+  .login-box {
+    background-color: lightblue;
+    padding: 50px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 150px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-box input[type="text"],
+  .login-box input[type="email"],
+  .login-box input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .login-box button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .login-box button:hover {
+    background-color: navy;
+  }
+
+  .login-box a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .error {
+    color: red;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/006/032/465/non_2x/abstract-soft-blue-background-modern-and-clean-banner-landing-page-concept-with-pastel-color-free-vector.jpg'); background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;">
+
+<div class="login-box">
+  <h2>Welcome to BookNest!</h2>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Username" required>
+    <span class="error" id="usernameError"></span>
+
+    <input type="email" id="email" placeholder="Email" required>
+    <span class="error" id="emailError"></span>
+
+    <input type="password" id="password" placeholder="Password" required>
+    <span class="error" id="passwordError"></span>
+
+    <button type="submit">Login</button>
+  </form>
+  <a href="#">Forgot Password?</a>
+</div>
+
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Clear previous errors
+    document.getElementById("usernameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("passwordError").textContent = "";
+
+    // Get values
+    let username = document.getElementById("username").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value;
+    let valid = true;
+
+    // Validate username
+    if (username.length < 3) {
+      document.getElementById("usernameError").textContent = "Username must be at least 3 characters.";
+      valid = false;
+    }
+
+    // Validate email format
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!emailPattern.test(email)) {
+      document.getElementById("emailError").textContent = "Enter a valid email address.";
+      valid = false;
+    }
+
+    // Validate password length
+    if (password.length < 6) {
+      document.getElementById("passwordError").textContent = "Password must be at least 6 characters.";
+      valid = false;
+    }
+
+    // If validation passes, redirect to main page
+    if (valid) {
+      alert("Login successful!");
+      window.location.href = "file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/main1.html";
+    }
+  });
+</script>
+
+</body>
+</html>

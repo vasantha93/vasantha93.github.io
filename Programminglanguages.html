@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programming Books</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #E873FF;
+      background-image: url('https://t3.ftcdn.net/jpg/04/95/12/38/360_F_495123890_u9dfRTJx2MrYXWs8Rd1eUibMAeVyXXP9.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .book-card {
+      border: 6px solid gold;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .book-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .book-author {
+      font-size: 14px;
+      color: gray;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      
+    }
+    .cart-btn, .purchase-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .purchase-btn {
+      background-color: #28a745;
+    }
+    .cart-btn:hover {
+      background-color: #0056b3;
+    }
+    .purchase-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center; color:#FF007F"><b><i>Programming Books</i></b></h1>
+    <div class="book-grid">
+      <!-- First Row (4 books) -->
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/61YRfQplFjL.jpg" alt="Book" />
+        <div class="book-title">C-Language</div>
+        <div class="book-author">Joshua Fine</div>
+        <div class="price">₹199</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/The_C%2B%2B_Programming_Language%2C_Fourth_Edition.jpg/220px-The_C%2B%2B_Programming_Language%2C_Fourth_Edition.jpg" alt="Book" />
+        <div class="book-title">C++ Language</div>
+        <div class="book-author">Jack Kirby</div>
+        <div class="price">₹275</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/C%2B%2B"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="Book" />
+        <div class="book-title">HTML</div>
+        <div class="book-author">Shailendra Haldar</div>
+        <div class="price">₹85</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/HTML"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/640px-Java_programming_language_logo.svg.png" alt="Book" />
+        <div class="book-title">Java</div>
+        <div class="book-author">La jeune</div>
+        <div class="price">₹460</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <!-- Second Row (4 books) -->
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/41E-DkkpPtL._AC_UF1000,1000_QL80_.jpg" alt="Book" />
+        <div class="book-title">Python</div>
+        <div class="book-author">Dell Comics</div>
+        <div class="price">₹399</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://www.interviewbit.com/blog/wp-content/uploads/2022/01/Effective-JavaScript.jpg" alt="Book" />
+        <div class="book-title">Javascript</div>
+        <div class="book-author">J.K.Rowling</div>
+        <div class="price">₹299</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/JavaScript">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/518+W2zr3BL._AC_UF1000,1000_QL80_.jpg" alt="Book" />
+        <div class="book-title">React</div>
+        <div class="book-author">Marvel Comics</div>
+        <div class="price">₹350</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/React_Native"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/91QvuTCZ0vL.jpg" alt="Book" />
+        <div class="book-title">Data Structures</div>
+        <div class="book-author">Akira Toriyama</div>
+        <div class="price">₹399</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Data_structure"<button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

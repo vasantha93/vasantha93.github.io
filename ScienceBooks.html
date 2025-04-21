@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Science Books</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #E873FF;
+      background-image: url('https://t3.ftcdn.net/jpg/04/95/12/38/360_F_495123890_u9dfRTJx2MrYXWs8Rd1eUibMAeVyXXP9.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .book-card {
+      border: 6px solid gold;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .book-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .book-author {
+      font-size: 14px;
+      color: gray;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      
+    }
+    .cart-btn, .purchase-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .purchase-btn {
+      background-color: #28a745;
+    }
+    .cart-btn:hover {
+      background-color: #0056b3;
+    }
+    .purchase-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center; color:#FF007F"><b><i>Science Books</i></b></h1>
+    <div class="book-grid">
+      <!-- First Row (4 books) -->
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/91STv8YKcQL._AC_UF1000,1000_QL80_.jpg" alt="Book" />
+        <div class="book-title">The Periodic table</div>
+        <div class="book-author">Joshua Fine</div>
+        <div class="price">₹199</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_Periodic_Table_(short_story_collection)#:~:text=The%20Periodic%20Table%20(Italian%3A%20Il,the%20best%20science%20book%20ever.&text=The%20elements%20that%20are%20titles%20of%20the%20stories."><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://i.namu.wiki/i/UQ2DyPxPRo35-lUcZb3Jek2YuyoKLRJhd3CVdNWBS8rPiHbtxNWyy7hEhFIW3ffVXpOhaT_CDOUE9ljwSs9qPA.webp" alt="Book" />
+        <div class="book-title">The Selfish Gene</div>
+        <div class="book-author">Jack Kirby</div>
+        <div class="price">₹275</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_Selfish_Gene"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/81DAK5xNjQL._AC_UF1000,1000_QL80_.jpg" alt="Book" />
+        <div class="book-title">Black hole</div>
+        <div class="book-author">Shailendra Haldar</div>
+        <div class="price">₹85</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/HTML"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Brieferhistoryoftime-cover.jpg" alt="Book" />
+        <div class="book-title">Brieferhistoryoftime</div>
+        <div class="book-author">La jeune</div>
+        <div class="price">₹460</div>
+        <div class="button-group">
+          <a href="https://simple.wikipedia.org/wiki/A_Brief_History_of_Time"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <!-- Second Row (4 books) -->
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/91/Cosmos_book.gif" alt="Book" />
+        <div class="book-title">Cosmos book</div>
+        <div class="book-author">Dell Comics</div>
+        <div class="price">₹399</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Cosmos_(Sagan_book)"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/ac/SilentSpring.jpg" alt="Book" />
+        <div class="book-title">SilentSpring</div>
+        <div class="book-author">J.K.Rowling</div>
+        <div class="price">₹299</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Silent_Spring#:~:text=Silent%20Spring%20is%20an%20environmental,soldiers%20during%20World%20War%20II.">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/4e/The_Demon-Haunted_World%2C_first_edition_cover.jpg" alt="Book" />
+        <div class="book-title">Demon Haunted</div>
+        <div class="book-author">Marvel Comics</div>
+        <div class="price">₹350</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Stephen_King"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Craft-of-science-writing.jpg/220px-Craft-of-science-writing.jpg" alt="Book" />
+        <div class="book-title">The Craft of Science Writing</div>
+        <div class="book-author">Akira Toriyama</div>
+        <div class="price">₹399</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_Craft_of_Science_Writing"<button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #E873FF;
+      background-image: url('https://t3.ftcdn.net/jpg/04/95/12/38/360_F_495123890_u9dfRTJx2MrYXWs8Rd1eUibMAeVyXXP9.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .book-card {
+      border: 6px solid gold;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .book-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .book-author {
+      font-size: 14px;
+      color: gray;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      
+    }
+    .cart-btn, .purchase-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .purchase-btn {
+      background-color: #28a745;
+    }
+    .cart-btn:hover {
+      background-color: #0056b3;
+    }
+    .purchase-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center; color:#FF007F"><b><i>Comic Books</i></b></h1>
+    <div class="book-grid">
+      <!-- First Row (4 books) -->
+      <div class="book-card">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/1/70/5ae0da3be00ff/standard_incredible.jpg" alt="Book" />
+        <div class="book-title">The Avengers</div>
+        <div class="book-author">Joshua Fine</div>
+        <div class="price">₹199</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_Avengers:_Earth%27s_Mightiest_Heroes"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_568,c_scale,dpr_1.5/jackets/9781474226370.jpg" alt="Book" />
+        <div class="book-title">Superhero comics</div>
+        <div class="book-author">Jack Kirby</div>
+        <div class="price">₹275</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Superhero_comics"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/81xrZbXZi8L._AC_UF1000,1000_QL80_.jpg" alt="Book" />
+        <div class="book-title">Cinderella</div>
+        <div class="book-author">Shailendra Haldar</div>
+        <div class="price">₹85</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Cinderella"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://static.wikia.nocookie.net/disney/images/d/db/613375-beautybeast.jpg/revision/latest?cb=20141216140954" alt="Book" />
+        <div class="book-title">Beauty and the Beast</div>
+        <div class="book-author">La jeune</div>
+        <div class="price">₹460</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Beauty_and_the_Beast"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <!-- Second Row (4 books) -->
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/MickeyMouseAndFriendsNo296.jpg" alt="Book" />
+        <div class="book-title">Mickey Mouse</div>
+        <div class="book-author">Dell Comics</div>
+        <div class="price">₹399</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Mickey_Mouse_(comic_book)"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://static.wikia.nocookie.net/harrypotter/images/d/da/Deathly_Hallows_New_Cover.jpg/revision/latest?cb=20170109054859" alt="Book" />
+        <div class="book-title">Harry Potter</div>
+        <div class="book-author">J.K.Rowling</div>
+        <div class="price">₹299</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Harry_Potter"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png" alt="Book" />
+        <div class="book-title">Spider-Man</div>
+        <div class="book-author">Marvel Comics</div>
+        <div class="price">₹350</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Spider-Man"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c9/DB_Tank%C5%8Dbon.png" alt="Book" />
+        <div class="book-title">Dragon Ball</div>
+        <div class="book-author">Akira Toriyama</div>
+        <div class="price">₹399</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Dragon_Ball_(manga)"<button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frequently Asked Questions</title>
+<style>
+  body {
+    font-family: sans-serif;
+    background-color: #f0f0f0; /* A light grey background for the whole page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .faq-box {
+    background-color: rgba(255, 182, 193, 0.7); /* Pink with 70% opacity */
+    padding: 30px;
+    border-radius: 8px;
+    width: 600px; /* Adjust the width as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .faq-box .question {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+  }
+
+  .faq-box .question:last-child {
+    border-bottom: none;
+  }
+
+  .faq-box .question span {
+    color: #007bff;
+    font-weight: bold;
+  }
+
+  .faq-box .answer {
+    padding-top: 20px;
+    display: none; 
+color :#C21807;/* Initially hide the answers */
+  }
+</style>
+</head>
+<body style="background-image: url('https://media.istockphoto.com/id/1582361888/photo/metallic-question-marks-illuminated-by-blue-and-pink-lights-on-blue-and-pink-background.jpg?s=612x612&w=0&k=20&c=LtkGr3xCQuZmMqhu3RIZFAzx6ILDyomk4-pwEiyxWms=') ; background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%; ">
+
+<div class="faq-box">
+  <h1><B>Frequently Asked Questions</B></h1>
+  <div class="question">
+    <h3>How do I know the list of available books?</h3>
+    <span>+</span> 
+  </div>
+  <div class="answer">
+    <h3><B>You can check our online catalog or visit our store.</B></h3>
+  </div>
+  <div class="question">
+    <h3>How often are new books added?</h3>
+    <span>+</span>
+  </div>
+  <div class="answer">
+    <h3><B>Very oftenly books will be added.</B></h3>
+  </div>
+  <div class="question">
+    <h3>Is there a way to search for books by author?</h3>
+    <span>+</span>
+  </div>
+  <div class="answer">
+    <h3><B>yes you can get to know.</B></h3>
+  </div>
+  <div class="question">
+    <h3>How many books can I read at once?</h3>
+    <span>+</span>
+  </div>
+  <div class="answer">
+    <h3><B>yes you can.</B></h3>
+  </div>
+  <div class="question">
+    <h3>Are there any audiobooks available?</h3>
+    <span>+</span>
+  </div>
+  <div class="answer">
+    <h3><B>Not now but may be it may come.</B></h3>
+  </div>
+</div>
+
+<script>
+  const questions = document.querySelectorAll('.question');
+  questions.forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+        question.querySelector('span').textContent = '+';
+      } else {
+        answer.style.display = 'block';
+        question.querySelector('span').textContent = '-';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

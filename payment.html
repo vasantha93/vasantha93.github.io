@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+background-image: url('https://static.vecteezy.com/system/resources/thumbnails/006/310/445/small_2x/abstract-colorful-geometric-background-modern-background-design-liquid-color-liquid-form-composition-suitable-for-presentation-design-website-base-for-banner-wallpaper-brochure-poster-free-vector.jpg') ; 
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%
+        }
+        .payment-container {
+            background:rgb(253,159,162);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .payment-button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .apple-pay { background: black; color: white; }
+        .google-pay { background: #000; color: white; }
+        .card-form, .cash-form, .confirmation {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .card-form input, .cash-form input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .pay-button {
+            background: blue;
+            color: white;
+            font-weight: bold;
+        }
+        .confirmation {
+            background: #d4edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+        }
+        .continue-button {
+            background: green;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function showPaymentForm() {
+            let paymentType = document.querySelector('input[name="paymentType"]:checked').value;
+            document.querySelector('.card-form').style.display = paymentType === 'phone' ? 'block' : 'none';
+            document.querySelector('.cash-form').style.display = paymentType === 'cash' ? 'block' : 'none';
+        }
+        
+        function completePayment() {
+            document.querySelector('.card-form').style.display = 'none';
+            document.querySelector('.cash-form').style.display = 'none';
+            document.querySelector('.confirmation').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Select Payment Type</h2><hr><br>
+        <label><input type="radio" name="paymentType" value="phone" onclick="showPaymentForm()"> Phone Pay</label><br><br>
+<hr><br>
+        <label><input type="radio" name="paymentType" value="cash" onclick="showPaymentForm()"> Hand Cash</label>
+        
+        <div class="card-form">
+            <h3>Card Payment</h3>
+            <input type="text" placeholder="Name on card">
+            <input type="text" placeholder="Card number">
+            <input type="text" placeholder="Expiry date (MM/YY)">
+            <input type="text" placeholder="Security code (CVV)">
+	    <input type="text" placeholder="Enter your Address">
+
+            <button class="payment-button pay-button" onclick="completePayment()">Pay</button>
+        </div>
+        
+        <div class="cash-form">
+            <h3>Cash Payment</h3>
+            <input type="text" placeholder="Enter your address">
+            <button class="payment-button pay-button" onclick="completePayment()">Confirm Order</button>
+        </div>
+
+        <div class="confirmation">
+            <h2>Payment Completed</h2>
+            <p>Congratulations! Your payment was successful.</p>
+            <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/main1.html"><button class="payment-button continue-button" onclick="window.location.reload()">Thankyou For Shopping</button></a>
+        </div>
+    </div>
+</body>
+</html>

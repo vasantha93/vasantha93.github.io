@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spiritual Books</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #E873FF;
+      background-image: url('https://t3.ftcdn.net/jpg/04/95/12/38/360_F_495123890_u9dfRTJx2MrYXWs8Rd1eUibMAeVyXXP9.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .book-card {
+      border: 6px solid gold;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .book-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .book-author {
+      font-size: 14px;
+      color: gray;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      
+    }
+    .cart-btn, .purchase-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .purchase-btn {
+      background-color: #28a745;
+    }
+    .cart-btn:hover {
+      background-color: #0056b3;
+    }
+    .purchase-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center; color:#FF007F"><b><i>Story books</i></b></h1>
+    <div class="book-grid">
+      <!-- First Row (4 books) -->
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/41/TheWitches.jpg" alt="Book" />
+        <div class="book-title">The witches</div>
+        <div class="book-author">Joshua Fine</div>
+        <div class="price">₹199</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_Witches_%28novel%29"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Raja_Ravi_Varma_-_Sankaracharya.jpg/200px-Raja_Ravi_Varma_-_Sankaracharya.jpg" alt="Book" />
+        <div class="book-title">Ramayana</div>
+        <div class="book-author">Jack Kirby</div>
+        <div class="price">₹275</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Upanishads"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/81N3HRFq8XL.jpg" alt="Book" />
+        <div class="book-title">Dark Soul</div>
+        <div class="book-author">Shailendra Haldar</div>
+        <div class="price">₹85</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Dark_Night_of_the_Soul"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/39/Bhagavad-Gita_As_It_Is_%28Russian%29.jpg" alt="Book" />
+        <div class="book-title">BhagavadGita</div>
+        <div class="book-author">La jeune</div>
+        <div class="price">₹460</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Bhagavad_Gita"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <!-- Second Row (4 books) -->
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/MickeyMouseAndFriendsNo296.jpg" alt="Book" />
+        <div class="book-title">Mickey Mouse</div>
+        <div class="book-author">Dell Comics</div>
+        <div class="price">₹399</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Quran"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/66/TPON_Cover_LG.jpg" alt="Book" />
+        <div class="book-title">Harry Potter</div>
+        <div class="book-author">J.K.Rowling</div>
+        <div class="price">₹299</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_Power_of_Now">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/The_Outsider_by_Stephen_King.jpg" alt="Book" />
+        <div class="book-title">Stephen King</div>
+        <div class="book-author">Marvel Comics</div>
+        <div class="price">₹350</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Stephen_King"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Fear_R.L._Stine.jpeg" alt="Book" />
+        <div class="book-title">Dragon Ball</div>
+        <div class="book-author">Akira Toriyama</div>
+        <div class="price">₹399</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Fear_(Hubbard_novella)"<button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History Books</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #E873FF;
+      background-image: url('https://t3.ftcdn.net/jpg/04/95/12/38/360_F_495123890_u9dfRTJx2MrYXWs8Rd1eUibMAeVyXXP9.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .book-card {
+      border: 6px solid gold;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .book-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .book-author {
+      font-size: 14px;
+      color: gray;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      
+    }
+    .cart-btn, .purchase-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .purchase-btn {
+      background-color: #28a745;
+    }
+    .cart-btn:hover {
+      background-color: #0056b3;
+    }
+    .purchase-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center; color:#FF007F"><b><i>History Books</i></b></h1>
+    <div class="book-grid">
+      <!-- First Row (4 books) -->
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Pericles_Pio-Clementino_Inv269_n3.jpg/170px-Pericles_Pio-Clementino_Inv269_n3.jpg" alt="Book" />
+        <div class="book-title">Peloponnesian War</div>
+        <div class="book-author">Joshua Fine</div>
+        <div class="price">₹199</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/History_of_the_Peloponnesian_War#:~:text=It%20was%20written%20by%20Thucydides,is%20divided%20into%20eight%20books."><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Decline_and_Fall_of_the_Roman_Empire_vol_1_%281777%29.djvu/page7-300px-Decline_and_Fall_of_the_Roman_Empire_vol_1_%281777%29.djvu.jpg" alt="Book" />
+        <div class="book-title">Roman Empire</div>
+        <div class="book-author">Jack Kirby</div>
+        <div class="price">₹275</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_History_of_the_Decline_and_Fall_of_the_Roman_Empire"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/William_L._Shirer_-_The_Rise_and_Fall_of_the_Third_Reich.jpg" alt="Book" />
+        <div class="book-title">Third Reich
+</div>
+        <div class="book-author">Shailendra Haldar</div>
+        <div class="price">₹85</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_Rise_and_Fall_of_the_Third_Reich#Content_and_themes"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Dedication_page_for_the_Historiae_by_Herodotus_printed_at_Venice_1494.jpg/220px-Dedication_page_for_the_Historiae_by_Herodotus_printed_at_Venice_1494.jpg" alt="Book" />
+        <div class="book-title">United States</div>
+        <div class="book-author">La jeune</div>
+        <div class="price">₹460</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Histories_(Herodotus)"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <!-- Second Row (4 books) -->
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/11/Peopleshistoryzinn.jpg" alt="Book" />
+        <div class="book-title">The Art of War
+
+</div>
+        <div class="book-author">Dell Comics</div>
+        <div class="price">₹399</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/A_People%27s_History_of_the_United_States"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/51no+g+ttWL._SL500_.jpg" alt="Book" />
+        <div class="book-title">Harry Potter</div>
+        <div class="book-author">J.K.Rowling</div>
+        <div class="price">₹299</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/The_Art_of_War"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/The_Outsider_by_Stephen_King.jpg" alt="Book" />
+        <div class="book-title">Spider-Man</div>
+        <div class="book-author">Marvel Comics</div>
+        <div class="price">₹350</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Stephen_King"><button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+      <div class="book-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Fear_R.L._Stine.jpeg" alt="Book" />
+        <div class="book-title">Dragon Ball</div>
+        <div class="book-author">Akira Toriyama</div>
+        <div class="price">₹399</div>
+        <div class="button-group">
+          <a href="https://en.wikipedia.org/wiki/Fear_(Hubbard_novella)"<button class="cart-btn">📖Read</button></a>
+          <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/payment.html"><button class="purchase-btn">💳 Purchase</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

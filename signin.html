@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookNook Sign Up</title>
+<style>
+  body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .signup-box {
+    background-color: #E0B0FF;
+    padding: 50px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .signup-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .signup-box input[type="text"],
+  .signup-box input[type="email"],
+  .signup-box input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .signup-box button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .signup-box button:hover {
+    background-color: #0056b3;
+  }
+
+  .signup-box p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+
+  .signup-box a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .error {
+    color: red;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body style="background-image: url('https://t3.ftcdn.net/jpg/04/95/12/38/360_F_495123890_u9dfRTJx2MrYXWs8Rd1eUibMAeVyXXP9.jpg'); background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;">
+
+<div class="signup-box">
+  <h2>Welcome to Book Nest!</h2>
+  <form id="signupForm">
+    <input type="text" id="username" placeholder="Username" required>
+    <span class="error" id="usernameError"></span>
+
+    <input type="email" id="email" placeholder="Email" required>
+    <span class="error" id="emailError"></span>
+
+    <input type="password" id="password" placeholder="Password" required>
+    <span class="error" id="passwordError"></span>
+
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+    <span class="error" id="confirmPasswordError"></span>
+
+    <button type="submit">Sign Up</button>
+  </form>
+  <p>Already have an account? <a href="file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/l.html">Log In</a></p> 
+</div>
+
+<script>
+  document.getElementById("signupForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Clear previous errors
+    document.getElementById("usernameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("passwordError").textContent = "";
+    document.getElementById("confirmPasswordError").textContent = "";
+
+    // Get input values
+    let username = document.getElementById("username").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+    let valid = true;
+
+    // Validate username
+    if (username.length < 3) {
+      document.getElementById("usernameError").textContent = "Username must be at least 3 characters long.";
+      valid = false;
+    }
+
+    // Validate email
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!emailPattern.test(email)) {
+      document.getElementById("emailError").textContent = "Enter a valid email address.";
+      valid = false;
+    }
+
+    // Validate password
+    if (password.length < 6) {
+      document.getElementById("passwordError").textContent = "Password must be at least 6 characters long.";
+      valid = false;
+    }
+
+    // Validate password confirmation
+    if (password !== confirmPassword) {
+      document.getElementById("confirmPasswordError").textContent = "Passwords do not match.";
+      valid = false;
+    }
+
+    // If all validations pass, redirect to another page
+    if (valid) {
+      alert("Sign-up successful!");
+      window.location.href = "file:///C:/Users/tumat/OneDrive/Desktop/TimeLess%20Pages/main1.html";
+    }
+  });
+</script>
+
+</body>
+</html>
